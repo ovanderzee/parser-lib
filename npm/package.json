@@ -1,19 +1,23 @@
 {
-  "name": "parserlib",
-  "version": "@VERSION@",
-  "author": "Nicholas C. Zakas",
+  "name": "parserlib-oz",
+  "version": "0.2.5.a",
+  "author": {
+    "name": "Onno van der Zee"
+  },
   "contributors": [
-    "Nick Schonning"
+    {
+      "name": "Nicholas C. Zakas"
+    },
+    {
+      "name": "Nick Schonning"
+    }
   ],
-  "description": "CSS3 SAX-inspired parser",
+  "description": "CSS3 SAX-inspired parser (forked)",
   "license": "MIT",
-  "homepage": "https://github.com/CSSLint/parser-lib",
+  "homepage": "https://github.com/ovanderzee/parser-lib",
   "repository": {
     "type": "git",
-    "url": "http://github.com/CSSLint/parser-lib.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CSSLint/parser-lib/issues"
+    "url": "http://github.com/ovanderzee/parser-lib.git"
   },
   "keywords": [
     "parser",
