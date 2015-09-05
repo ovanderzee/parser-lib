@@ -571,6 +571,55 @@
     }));
 
     suite.add(new ValidationTestCase({
+        property: "clip",
+
+        valid: [
+            "rect(10%, 85%, 90%, 15%)",
+            'auto'
+        ],
+
+        invalid: {
+            "foo" : "Expected (<shape> | auto | inherit) but found 'foo'."
+        }
+    }));
+
+    suite.add(new ValidationTestCase({
+        property: "clip-path",
+
+        valid: [
+            "inset(10% 15% 10% 15%)",
+            "circle(30% at 85% 15%)",
+	        "url('#myPath')",
+	        "ellipse(40% 40%)",
+	        "margin-box",
+	        "ellipse(40% 40%) content-box",
+	        "stroke-box ellipse(40% 40%)",
+	        "none"
+        ],
+
+        invalid: {
+	        "stroke-box ellipse(40% 40%) 40%" : "Expected end of value but found '40%'.",
+            "foo" : "Expected (<uri> | <clip-path> | none) but found 'foo'.",
+	        "40%" : "Expected (<uri> | <clip-path> | none) but found '40%'.",
+	        "0.4" : "Expected (<uri> | <clip-path> | none) but found '0.4'."
+        }
+    }));
+
+    suite.add(new ValidationTestCase({
+        property: "clip-rule",
+
+        valid: [
+            "nonzero",
+            "evenodd",
+            "inherit"
+        ],
+
+        invalid: {
+            "foo" : "Expected (nonzero | evenodd | inherit) but found 'foo'."
+        }
+    }));
+
+    suite.add(new ValidationTestCase({
         property: "color",
 
         valid: [
