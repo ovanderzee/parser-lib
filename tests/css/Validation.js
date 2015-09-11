@@ -823,11 +823,11 @@
         invalid: {
             "url('myGradient') icc-color(myCmykDarkRed)" : "Expected (<paint>) but found 'url('myGradient') icc-color(myCmykDarkRed)'.",
             "currentColor icc-color(myCmykDarkRed)" : "Expected (<paint>) but found 'currentColor icc-color(myCmykDarkRed)'.",
-            "icc-color(myCmykDarkRed) darkred" : "Expected (<paint>) but found 'icc-color(myCmykDarkRed) darkred'.",
+            "icc-color(myCmykDarkRed) darkred" : "Expected end of value but found 'darkred'.",
             "icc-color(myCmykDarkRed)" : "Expected (<paint>) but found 'icc-color(myCmykDarkRed)'.",
-            "icc-color(myCmykDarkRed) inherit" : "Expected (<paint>) but found 'icc-color(myCmykDarkRed) inherit'.",
-            "inherit icc-color(myCmykDarkRed)" : "Expected (<paint>) but found 'inherit icc-color(myCmykDarkRed)'.",
-            "none inherit" : "Expected (<paint>) but found 'none inherit'."
+            "icc-color(myCmykDarkRed) inherit" : "Expected end of value but found 'inherit'.",
+            "inherit icc-color(myCmykDarkRed)" : "Expected end of value but found 'icc-color(myCmykDarkRed)'.",
+            "none inherit" : "Expected end of value but found 'inherit'."
         }
     }));
 
@@ -1130,7 +1130,7 @@
         ],
 
         invalid: {
-            "auto" : "Expected (butt | round | square | inherit) but found 'auto'."
+            "auto" : "Expected (butt | round | square | inherit) but found 'auto'.",
             "none" : "Expected (butt | round | square | inherit) but found 'none'."
         }
     }));
@@ -1146,7 +1146,7 @@
         ],
 
         invalid: {
-            "auto" : "Expected (miter | round | bevel | inherit) but found 'auto'."
+            "auto" : "Expected (miter | round | bevel | inherit) but found 'auto'.",
             "none" : "Expected (miter | round | bevel | inherit) but found 'none'."
         }
     }));
@@ -1163,9 +1163,9 @@
         ],
 
         invalid: {
-            "-10" : "Expected (<miterlimit>) but found '-10'.",
-            "0.5" : "Expected (<miterlimit>) but found '0.5'.",
-            "foo" : "Expected (<miterlimit>) but found 'foo'."
+            "-10" : "Expected (<miterlimit> | inherit) but found '-10'.",
+            "0.5" : "Expected (<miterlimit> | inherit) but found '0.5'.",
+            "foo" : "Expected (<miterlimit> | inherit) but found 'foo'."
         }
     }));
 

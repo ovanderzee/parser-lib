@@ -530,6 +530,9 @@ var ValidationTypes = {
                 arrayResult = arrayResult && partResult;
             }
 
+            if (!arrayResult) {
+                expression.previous();
+            }
             return arrayResult;
 
         },
