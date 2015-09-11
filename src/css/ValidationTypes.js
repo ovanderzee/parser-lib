@@ -178,6 +178,10 @@ var ValidationTypes = {
             return part.type == "angle";
         },
 
+        "<glyph-angle>": function(part){
+            return part.type == "angle" && part.units == 'deg';
+        },
+
         "<uri>": function(part){
             return part.type == "uri";
         },
