@@ -1,6 +1,6 @@
 {
   "name": "parserlib-oz",
-  "version": "0.2.5.a",
+  "version": "0.2.5-c",
   "author": {
     "name": "Onno van der Zee"
   },
@@ -27,9 +27,5 @@
     "style",
     "stylesheet"
   ],
-  "main": "./lib/node-parserlib.js",
-  "scripts": {
-    "test": "ant -f ../../build.xml test",
-    "prepublish": "npm test"
-  }
+  "main": "./lib/node-parserlib.js"
 }
