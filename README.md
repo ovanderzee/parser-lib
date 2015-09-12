@@ -1,5 +1,8 @@
 This is a fork. Here is the [origin](https://www.npmjs.com/package/parserlib)
 
+You can make use of this lib by using [csslint-oz](https://www.npmjs.com/package/csslint-oz), 
+which is forked with the sole purpose of picking up parserlib-oz. 
+
 ### Changes
 
 My goal is to have more SVG properties and make some validation types more precise.
